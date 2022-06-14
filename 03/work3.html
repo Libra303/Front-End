@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>회원 가입</h3>
+    <form>
+
+        <table>
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id" autofocus/></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="user_name"/></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pwd"/></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td><input type="password" name="pwd_check"/></td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td><input type="text" placeholder="010-1234-1234" name="phone"/></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td>
+                    <input type="text" name="email_front"/>@
+                    <input type="text" name="email_back"/>
+                    <select>
+                        <option value="s1">직접입력</option>
+                        <option value="s2">naver.com</option>
+                        <option value="s3">nate.com</option>
+                        <option value="s4">google.com</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>문자수신 여부</td>
+                <td>
+                    <input type="radio" name="radio_btn" checked>예
+                    <input type="radio" name="radio_btn">아니오
+                </td>
+            </tr>
+            <tr>
+                <td>가입 경로</td>
+                <td>
+                    <input type="checkbox" name="c1">친구 소개
+                    <input type="checkbox" name="c2">인터넷 검색
+                    <input type="checkbox" name="c3">블로그
+                    <input type="checkbox" name="c4">기타
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

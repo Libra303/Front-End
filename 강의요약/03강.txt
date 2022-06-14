@@ -1,0 +1,26 @@
+03강
+
+배운 내용-------------------------------------------------------------
+
+-form 태그(안에) 
+-input 태그    
+    ->type = text/button/password/radio/checkbox/
+                 file/submit/reset/number
+    ※주의 : radio에서 name이 같아야 동작함
+-select 태그
+-textarea 태그
+-table 태그 (col/row span)
+
+＃꿀팁-------------------------------------------------------------
+-글씨 선택해도 체크 되게 하는법(chk/rdo)
+<input type="checkbox" id="chk1" name="item1" checked/>
+<label for="chk1">뉴스</label>
+(정석)
+
+또는
+<label><input type="checkbox" id="chk5" name="item5"/>기타</label>
+
+공부 싸이트-------------------------------------------------------------
+w3school
+TCPSHCOOL (국내)
+
