@@ -1,0 +1,16 @@
+04강 
+
+내용---------------------------------------------------------------
+
+-css 기초(font-family / back-ground-color / color)
+-주석 단축키 ctrl + /
+-기본 글자 16px;임
+- text-shadow : 3px 3px 5px #666;
+- a 태그 css속성
+   ->link 기본
+   ->visited 방문 후
+   ->hover 마우스 오버시
+   ->active 누르는 중
+-구글폰트(폰트검색) 
+   ->원하는 폰트 찾아서 link하기
+
