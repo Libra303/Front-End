@@ -1,0 +1,19 @@
+06강 요약
+
+-background : 속성들
+	background-image -> 기본값은 자동 반복
+	background-repeat ->  반복여부
+	background-position -> 위치 표시 ( center center) 와 같이
+	background-size : cover: 가로기준 // contain: 세로기준 
+         *한번에 사용 가능*
+	background: url('img/tree.png') no-repeat right top;
+
+-table : 추가속성
+	css) border-collapse : collaspe -> 테이블 경계선 하나로 지정하는 css
+	<colrgroup> -> 테이블의 열(col)을 이용하는 태그 
+
+-display 속성
+	inline - 인라인 요소로 변경
+	block - 블록요소로 변경
+	inline-block - 인라인 블록 요소로 변경
+	none -사라짐

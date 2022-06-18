@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div,span{ border:1px solid red; background-color: yellow;}
+        .a{width: 100px; height: 100px; margin: 20px;}/*가로 높이 적용 x */
+        .b{display: block; width: 100px; height: 100px; margin: 20px;}/* 가로 높이 적용 o But block 특징이라 줄 넘어감 */
+        .c{display: inline-block; width: 100px; height: 100px; margin: 20px;}/* 가로 높이 적용 o And inline 특징이라 줄 안넘어감 */
+        /*span은 inline인데 갸로세로 조절이 안돼서 inline-block을 사용하여 가로 세로를 준다
+            (block은 줄이 넘어가기 때문에)
+        */
+    </style>
+</head>
+<body>
+    <h3>인라인과 블록</h3>
+    <p>
+        글자1<span class="a">요소 A</span>
+        글자2<span class="b">요소 B</span>
+        글자3<span class="c">요소 C</span>
+        글자4
+    </p>
+</body>
+</html>

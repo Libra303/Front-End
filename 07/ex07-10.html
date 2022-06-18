@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{ list-style: none; }
+        h3, #join{ margin: 20px 0 30px;}
+        #join{
+            width:480px;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .row{ padding: 5px;}
+        .row li{ display: inline-block; }
+       
+        .col1{ width: 120px;}
+        .col2 input, select {width:200px;height: 28px;}
+        .email input{width:100px;height:25px;}
+
+        .hello{vertical-align: top;}
+        textarea{width:328px;height: 100px;}
+        
+        .buttons{width:510px;text-align: right;}
+        .buttons button {margin-top: 20px;padding: 8px 20px;}
+
+
+    </style>
+</head>
+<body>
+    <h3>회원가입 폼</h3>
+
+    <form>
+        <ul id="join">
+            <li>
+                <ul class="row">
+                    <li class="col1">아이디</li>
+                    <li class="col2"><input type="text" name="id"/></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1">비밀번호</li>
+                    <li class="col2"><input type="password" name="pwd"/></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1">비밀번호 확인</li>
+                    <li class="col2"><input type="password" name="pwd_check"/></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1">이름</li>
+                    <li class="col2"><input type="text" name="name"></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1">이메일</li>
+                    <li class="email">
+                        <input type="text" name="email"> @
+                        <select name="email_select">
+                            <option>직접 입력</option>
+                            <option>naver.com</option>
+                            <option>hanmail.net</option>
+                            <option>gmail.com</option>
+                        </select>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1">이메일 수신</li>
+                    <li class="email_recive">
+                        <label><input type="radio" name="email_radio" checked/> 비수신 </label>
+                        <label><input type="radio" name="email_radio"/> 수신 </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1">가입 경로</li>
+                    <li class="route checkBox">
+                        <label><input type="checkbox" name="route1"> 친구추천 </label>
+                        <label><input type="checkbox" name="route1"> 인터넷 검색 </label>
+                        <label><input type="checkbox" name="route1"> 기타 </label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="row">
+                    <li class="col1 hello">인사말</li>
+                    <li class="col2">
+                        <textarea name="txt_area"  cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="buttons">
+            <button>저장하기</button>
+            <button>취소하기</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
