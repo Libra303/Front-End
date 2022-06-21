@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid blue;
+        }
+
+        .box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #header_top {
+            border: 1px solid red;
+        }
+
+        #top_menu {
+            float: right;
+            border: 1px solid red;
+        }
+
+        #header_bottom {
+            border: 1px solid red;
+            height: 90px;
+        }
+
+        #main_img {
+            margin: 30px 0;
+            float: left;
+            width: 750px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        aside {
+            margin: 30px 0;
+            float: right;
+            width: 230px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        #main{
+            clear: both;
+        }
+
+        ul{
+            float: left;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            border: 1px solid red;
+            height: 250px;
+        }
+
+        #item1 {
+            width: 206px;
+        }
+
+        #item2,
+        #item3,
+        #item4 {
+            padding-left:5px;
+            width: 250px;
+        }
+
+
+        footer {
+            margin-top: 50px;
+            height: 100px;
+            border: 1px solid red;
+        }
+
+        #footer1 {
+            float: left;
+            border: 1px solid red;
+        }
+
+        #footer2 {
+            float: right;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header_top">
+            <div class="box">
+                <div id="top_menu">상단 메뉴</div>
+            </div>
+        </div>
+        <div id="header_bottom">
+            <div class="box">
+                로고 & 메인 메뉴 & 검색
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="box">
+            <div id="main_img">메인 이미지</div>
+            <aside>사이드바</aside>
+            <div id="main">
+                <ul>
+                    <li id="item1">항목1</li>
+                    <li id="item2">항목2</li>
+                    <li id="item3">항목3</li>
+                    <li id="item4">항목4</li>
+                </ul>
+            </div>
+
+    </section>
+
+    <footer>
+        <div class="box">
+            <div id="footer1">푸터1</div>
+            <div id="footer2">푸터2</div>
+        </div>
+    </footer>
+</body>
+</html>

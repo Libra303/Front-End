@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; text-align: center;}
+        header{
+            height: 40px;
+            border: 1px solid red;
+        }
+        .box{
+            width: 980px;
+            margin: 0 auto;
+            border: 1px solid blue;
+        }
+        .box:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #menu_left{
+            float: left;
+            border: 1px solid red;
+        }
+        #menu_right{
+            float: right;
+            border: 1px solid red;
+        }
+        #main_img{
+            height: 150px;
+            border-bottom: 1px solid red;
+        }
+        #product_list{
+            height: 250px;
+            border-bottom: 1px solid red;
+        }
+        #footer1,#footer2,#footer3{
+            height: 80px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <div id="menu_left">좌측 메뉴</div>
+            <div id="menu_right">우측 메뉴</div>
+        </div>
+    </header>
+
+    <section>
+        <div class="box">
+            <div id="main_img">메인 이미지</div>
+            <div id="product_list">상품 리스트</div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer1">
+            <div class="box">풋터1</div>
+        </div>
+        <div id="footer2">
+            <div class="box">풋터2</div>
+        </div>
+        <div id="footer3">
+            <div class="box">풋터3</div>
+        </div>
+    </footer>
+</body>
+</html>
