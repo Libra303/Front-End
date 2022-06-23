@@ -1,0 +1,218 @@
+body{
+    min-width: 1100px;
+}
+
+/*기본 박스 크기-----------------------------------------*/
+.box {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*Header영역--------------------------------------------*/
+header {
+    height: 166px;
+}
+#logo{
+    float: left;
+    margin: 80px 0 0 60px;
+}
+#menu{
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+#menu li{
+    display: inline-block;
+}
+#top_menu li{
+    margin: 30px 0 0 10px;
+}
+#main_menu li{
+    margin:50px 0 0 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*메인 이미지 영역---------------------------------------*/
+#main_image {
+    height: 312px;
+    background: url('../img/main_bg.png') no-repeat center top;
+}
+#main_image .box{
+    height: 100%;
+}
+#main_image .btn_class{
+    position: absolute;
+    right: 104px;
+    bottom: 43px;
+}
+
+
+/*사이드 바 영역----------------------------------------*/
+aside {
+    float: left;
+    margin-top: 70px;
+    width: 220px;
+}
+aside .title1{
+    background-color: #0ca9a3;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+}
+aside .comment{
+    padding: 20px 10px;
+    line-height: 150%;
+}
+aside .search input{
+    width: 160px;
+    height: 30px;
+    padding: 0px;
+    border: 1px solid black;
+}
+aside .search button{
+    width: 50px;
+    height: 32px;
+    padding: 6px 10px;
+    border: 1px solid black ;
+}
+aside .title2{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #ccc;
+}
+aside .list {
+    margin: 20px 0;
+}
+aside .list li {
+    margin: 15px 12px;
+}
+aside .reply {
+    padding: 12px;
+    border: 1px solid #0ca9a3;
+}
+aside .reply h2 {
+    font-size: 18px;
+    margin: 10px 0 15px;
+    font-weight: bold;
+}
+aside .reply li {
+    margin-top: 6px;
+}
+
+
+/*메인 공통 영역--------------------------------------------*/
+#main {
+    float: right;
+    width: 840px;
+}
+#main .title,#main .title2{
+    font-size: 18px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+/*메인 1 영역*/
+#main1{
+    margin-top: 70px;
+    width: 405px;
+    float: left;
+}
+#main1 .latest{
+     margin-top: 33px;
+}
+#main1 .items::after{
+    content: '';
+    display: block;
+    margin-bottom: 16px;
+    clear: both;
+}
+#main1 .items .subject{
+    float: left;
+}
+#main1 .items .date{
+    float: right;
+}
+#main1 .title2{
+    margin-top: 50px;
+}
+
+/*메인 2 영역*/
+#main2{
+    margin-top: 70px;
+    float: right;
+    width: 400px;
+}
+
+#main2 .subject{
+    margin-top: 17px;
+    font-weight: bold;
+}
+#main2 .date{
+    margin-top: 13px;
+}
+#main2 .item1{
+    margin-top: 33px;
+    float: left;
+}
+#main2 .item2{
+    margin-top: 33px;
+    float: right;
+}
+#main2 .item2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*Footer 공통 영역--------------------------------------------*/
+footer {
+    margin-top: 70px;
+    color: white;
+    background-color: #05354e;
+    height: 260px;
+}
+
+/*footer 메뉴*/
+#foot_menu ul{ margin-left: 100px; }
+#foot_menu li{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin-top: 23px;
+    margin-right: 38px;
+}
+/*footer 아이템*/
+.foot_item{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 48px;
+    margin-left: 100px;
+}
+.foot_item li{ 
+    margin-bottom: 10px;
+}
+.foot_item .strong{
+    font-weight: bold;
+    font-size: 25px;
+}
+.foot_item .title{
+    font-weight: bold;
+    color: #0ca9a3;
+    margin-bottom: 32px;
+}
