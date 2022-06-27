@@ -1,0 +1,16 @@
+11강요약
+
+-@media 쿼리 공부하기
+(미디어 쿼리는 밑에 쓰기, 사이즈 순서 지켜서 쓰기)
+
+-[class*=""] 클래스 다중 선택자
+
+-flex 공부하기
+   display : flex
+   flex-direction: column/reverse
+   justify-content : flex-start/ flext-end/center/space-between/space-around
+
+-align-items : center 위아래 가운데맞춤
+
+flex 공부 사이트
+https://studiomeal.com/archives/197
