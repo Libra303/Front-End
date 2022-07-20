@@ -66,61 +66,119 @@
             padding: 3px 0;
         }
 
-        .main_image img {
-            max-width: 100%;
+        .sub_image {
+            height: 150px;
+            background:no-repeat top center;
+            text-align: center;
+            color: #f9f5db;
         }
 
-        .banner {
-            padding: 15px;
+        .sub_image.intro {
+            background: url('img/sub_intro.jpg');
         }
 
-        .banner li {
-            float: left;
-            padding: 10px;
+        .sub_image.img_reservation {
+            background: url('img/sub_reservation.jpg');
         }
 
-        .banner img {
-            max-width: 100%;
+        .sub_image h1 {
+            padding-top: 40px;
+            font-size: 2em;
+            font-weight: normal;
         }
 
-        .banner p {
+        .sub_image span {
+            display: block;
             margin-top: 10px;
-            line-height: 1.5;
         }
 
-        .banners::after {
-            content: "";
-            display: block;
-            clear: both;
+        .reservation .calendar {
+            margin-top: 40px;
+            padding-top: 50px;
+            background-color: #fcf9ea;
+            text-align: center;
+            color: #444;
         }
 
-        .items::after {
-            content: "";
-            display: block;
-            clear: both;
+        .reservation .calendar h4 {
+            font-weight: normal;
         }
 
-        .items {
-            padding: 15px;
-            padding-bottom: 40px;
-            background-color: #ccc;
+        .reservation .calendar .month {
+            margin-top: 20px;
+            font-size: 1.2em;
         }
 
-        .items img {
-            max-width: 100%;
+        .reservation .calendar .month span {
+            font-size: 1.2em;
         }
 
-        .items ul {
+        .reservation table {
+            width:90%;
+            margin:20px auto 50px;
+            font-size: 0.9em;
             background-color: #fff;
-            margin-bottom: 20px;
+            text-align: left;
         }
 
-        .items li:nth-child(2) {
-            padding: 15px 10px;
+        .reservation table, .reservation td{
+            border-collapse: collapse;
+            border:1px solid #000;
         }
 
-        .items li:last-child {
-            padding: 0 10px 10px 10px;
+        .reservation tr {
+            height:60px;
+        }
+
+        .reservation thead tr {
+            height: 30px;
+            padding: 5px;
+            font-weight: bold;
+            background-color: #eee;
+        }
+
+        .reservation td {
+            vertical-align: top;
+            padding: 5px;
+            width: 14.2857%
+        }
+
+        .reservation tr td:first-child {
+            color:#f00;
+        }
+
+        .reservation tr td:last-child {
+            color:#00f;
+        }
+
+        .reservation::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .reservation .info {
+            padding: 30px;
+        }
+
+        .reservation .info h2 {
+            margin: 20px 0;
+            padding-left: 10px;
+            border-left: 8px solid #444;
+        }
+
+        .reservation .info ul {
+            margin-bottom: 40px;
+        }
+        
+        .reservation .info li {
+            margin-top: 12px;
+        }
+
+        .reservation .info li span{
+            display: block;
+            margin-top: 20px;
+            color:green
         }
 
         footer {
@@ -271,16 +329,24 @@
                 margin: 0 auto;
             }
 
-            .banners {
-                margin: 50px 0;
+            .sub_image {
+                height: 220px;
             }
 
-            .items {
-                padding-top: 60px;
+            .sub_image h1 {
+                padding-top: 75px;
             }
 
-            .item {
-                padding-right: 15px;
+            .reservation {
+                margin: 40px 0 90px;
+            }
+
+            .reservation .info {
+                margin-top: 20px;
+            }
+
+            .reservation tr{
+                height:100px;
             }
 
             footer h1 {
@@ -357,18 +423,26 @@
                 margin: 5px 0 0 50px;
             }
 
-            .banner {
-                padding-right: 30px;
+            .sub_image {
+                height: 350px;
             }
 
-            .items {
-                padding-top: 60px;
+            .sub_image h1 {
+                padding-top: 130px;
             }
 
-            .item {
-                padding-right: 15px;
+            .reservation {
+                margin: 40px 0 90px;
             }
 
+            .reservation .info {
+                margin-top: 20px;
+            }
+
+            .reservation tr {
+                height: 100px;
+            }
+            
             footer h1 {
                 font-size: 30px;
             }
@@ -396,68 +470,97 @@
             </nav>
         </div>
     </header>
-    <section class="main_image">
-        <img src="./img/main.jpg" />
+    <section class="sub_image img_reservation">
+        <!-- 
+            sub_image 옆에 이름을 바꿔주시면 배경이 변합니다.
+            intro :스튜디오 소개,
+            reservation : 스튜디오 예약
+        -->
+        <h1>스튜디오 예약</h1>
+        <span>사전에 인터넷으로 예약해주세요.</span>
     </section>
-    <section class="banners">
+    <section class="reservation">
         <div class="box">
-            <!-- ctrl+shift+[ 접기, ctrl+shift+] 열기 -->
-            <div class="banner col_m_6 col_6">
-                <ul>
-                    <li class="col_s_3"><img src="img/icon1.png" /></li>
-                    <li class="col_s_9">
-                        <h3>예약 안내</h3>
-                        <p>스튜디오 대여는 사전에 인터넷 예약을 하셔야 합니다. 예약은 1일 이전까지 가능합니다.</p>
-                    </li>
-                </ul>
+            <div class="calendar col_s_12 col_m_8 col_8">
+                <h4>예약 날짜를 선택해 주세요.</h4>
+                <div class="month">
+                    ◀ <span>2021.09</span> ▶
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Sun</td>
+                            <td>Mon</td>
+                            <td>Tue</td>
+                            <td>Wed</td>
+                            <td>Thu</td>
+                            <td>Fri</td>
+                            <td>Sat</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="banner col_m_6 col_6">
+            <div class="info col_s_12 col_m_4 col_4">
+                <h2>예약 안내</h2>
                 <ul>
-                    <li class="col_s_3"><img src="img/icon2.png" /></li>
-                    <li class="col_s_9">
-                        <h3>포토 갤러리</h3>
-                        <p>취업 사진, 가족 사진, 프로필 사진, 우정 사진 등 개인 또는 단체가 이용할 수 있습니다.</p>
-                    </li>
+                    <li>· 1일전 예약해 주세요.</li>
+                    <li>· 사용 일주일 이후에 취소는 환불됩니다.</li>
+                    <li>· 이용 시간은 촬영과 준비 모두 포함입니다.</li>
+                    <li>· 일요일은 휴일입니다.</li>
                 </ul>
-            </div>
-        </div>
-    </section>
-    <section class="items">
-        <div class="box">
-            <div class="item col_m_6 col_3">
+                <h2>이용 요금</h2>
                 <ul>
-                    <li><img src="img/image1.jpg" /></li>
-                    <li>
-                        <h3>촬영 스튜디오</h3>
-                    </li>
-                    <li>카메라, 조명 등 촬영 장비 완비</li>
-                </ul>
-            </div>
-            <div class="item col_m_6 col_3">
-                <ul>
-                    <li><img src="img/image2.jpg" /></li>
-                    <li>
-                        <h3>촬영 스튜디오</h3>
-                    </li>
-                    <li>카메라, 조명 등 촬영 장비 완비</li>
-                </ul>
-            </div>
-            <div class="item col_m_6 col_3">
-                <ul>
-                    <li><img src="img/image3.jpg" /></li>
-                    <li>
-                        <h3>촬영 스튜디오</h3>
-                    </li>
-                    <li>카메라, 조명 등 촬영 장비 완비</li>
-                </ul>
-            </div>
-            <div class="item col_m_6 col_3">
-                <ul>
-                    <li><img src="img/image1.jpg" /></li>
-                    <li>
-                        <h3>촬영 스튜디오</h3>
-                    </li>
-                    <li>카메라, 조명 등 촬영 장비 완비</li>
+                    <li>· 1시간 : 30,000원</li>
+                    <li>· 반일 대여 : 100,000원</li>
+                    <li>· 전일 대여 : 200,000원
+                    <span>※ 자세한 내용은 전화(1588-1588)로 문의 주세요.</span></li>
                 </ul>
             </div>
         </div>

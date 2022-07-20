@@ -1,0 +1,28 @@
+13강 요약
+
+----------------------------------------------------------------------------
+이거보단
+
+.sub_image {
+        height: 150px;
+        background: url('img/sub_intro.jpg') no-repeat top center;
+        text-align: center;
+        color: #f9f5db;
+}
+
+<section class="sub_image>
+----------------------------------------------------------------------------------
+이렇게 쓰기
+
+.sub_image {
+        height: 150px;
+        background:no-repeat top center;
+        text-align: center;
+        color: #f9f5db;
+}
+ .sub_image.intro { background: url('img/sub_intro.jpg'); }
+ .sub_image.reservation { background: url('img/sub_reservation.jpg'); }
+
+<section class="sub_image intro">
+<section class="sub_image reservation">
+------------------------------------------------------------
