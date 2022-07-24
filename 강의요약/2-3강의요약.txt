@@ -1,0 +1,10 @@
+2-3강 요약
+
+-Number(str); 숫자형으로 캐스팅
+-Math.sqrt(2); 루트 
+- 문자나 0 은 false로 취급
+※ ==은 값만 비교 ===은 자료형까지 비교 ※
+- Date 함수
+- 조건문 if/ if else /switch
+- 반복문 for/ while/ do whlie
+- && ||사용

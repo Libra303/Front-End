@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //점수 묻는 함수
+        function getScore(subject){
+            return Number(prompt(subject+'점수를 입력해주세요'));
+        }
+
+        //변수선언
+        var korean = getScore('국어');
+        var math = getScore('수학');
+        var english = getScore('영어');
+
+        //총점,평균값 계산
+        var total = korean + math + english;
+        var avg = total / 3;
+        var grade = '';
+
+        //조건검사
+        if(avg >= 90){
+            grade = '수';
+        }else if( avg >= 80){
+            grade = '우';
+        }else if( avg >= 70){
+            grade = '미';
+        }else if( avg >= 60){
+            grade = '양';
+        }else{
+            grade = '가';
+        }
+        
+        //출력
+        alert(
+            '총점 : ' + total + '\n'+
+            '평균 : ' + avg + '\n'+
+            '등급 : ' + grade
+        );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
