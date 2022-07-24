@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	정사각형 별찍기<br>
+	<script>
+	for(var i = 0; i < 5; i++)  {
+		for(var j = 0; j < 5; j++)  {
+			document.write('*');
+		}
+		document.write('<br>');
+	}
+    </script>
+	
+	<br>삼각형 별찍기1<br>
+	<script>
+	for (var i = 0; i < 5; i++) {
+	  for (var j = 0; j <= i; j++) {
+		document.write('*')
+	  }
+	  document.write('<br>');
+	}
+	</script>
+
+	<br>삼각형 별찍기2<br>
+	<script>
+	for(var i = 0; i < 5; i++)  {
+	  for(var j = 4; j > i; j--)  {
+		document.write('&nbsp');
+	  }
+	  for(var j = 0; j <= i; j++) {
+		document.write('*');
+	  }
+	  document.write('<br>');
+	}
+	</script>
+	
+	<br>삼각형 거꾸로 별찍기1<br>
+	<script>
+	for (var i = 0; i < 5; i++) {
+	  for (var j = 5; j > i; j--) {
+		document.write('*');
+	  }
+	  document.write('<br>');
+	}
+	</script>
+	
+	<br>삼각형 거꾸로 별찍기2<br>
+	<script>
+	for(var i = 0; i < 5; i++)  {
+	  for(var j=0; j <= i; j++)  {
+		// space
+		document.write('&nbsp');
+	  }
+	  for(var j=5; j > i; j--)  {
+		document.write('*');
+	  }
+	  document.write('<br>');
+	}
+	</script>
+	
+	<br>정삼각형 별찍기<br>
+	<script>
+	for(var i = 0; i < 5; i++)  {
+	  for(var j=4; j > i; j--)  {
+		// space
+		document.write('&nbsp');
+	  }
+	  for(var j=0; j <= i; j++)  {
+		document.write('*');
+	  }
+	  for(var j=1; j <= i; j++)  {
+		document.write('*');
+	  }
+	  document.write('<br>');
+	}
+	</script>
+	
+	<br>정삼각형 거꾸로 별찍기<br>
+	<script>
+	for(var i = 0; i < 5; i++)  {
+	  for(var j=0; j < i; j++)  {
+		document.write('&nbsp');
+	  }
+	  for(var j=5; j > i; j--)  {
+		// space
+		document.write('*');
+	  }
+	  for(var j=4; j > i; j--)  {
+		document.write('*');
+	  }
+	  document.write('<br>');
+	}
+	</script>
+	
+	<br>다이아몬드 별찍기<br>
+	<script>
+	for(var i = 0; i < 5; i++)  {
+	  for(var j = 4; j > i; j--)  {
+		document.write('&nbsp');
+	  }
+	  for(var j = 0; j <= i; j++)  {
+		document.write('*');
+	  }
+	  for(var j = 1; j <= i; j++)  {
+		document.write('*');
+	  }
+
+	  document.write('<br>');
+	}
+
+	for(var i = 0; i < 4; i++)  {
+	  for(var j = 0; j <= i; j++)  {
+		document.write('&nbsp');
+	  }
+	  for(var j = 4; j > i; j--)  {
+		document.write('*');
+	  }
+	  for(var j = 3; j > i; j--)  {
+		document.write('*');
+	  }
+	  document.write('<br>');
+	}
+
+	</script>
+</body>
+</html>
