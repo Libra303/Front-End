@@ -1,0 +1,18 @@
+2-5 강 요약
+
+- break / continue
+
+- 함수 function
+	function 함수(){} // var 함수 = function(){}동일
+= 전자는 함수();가 위에 있어도 실행가능
+= 후자는 불가능
+
+- 중요!) JS는 지정한 파라미터보다 많거나 적어도 가능!!!
+	-적게쓰면: undefined // 많이 쓰면 무시
+
+- 내부함수를 이용하면 범위가 지역적으로 변함 (충돌방지)
+
+- 기본 내장 함수들
+	-인코딩/디코딩
+	-escape 적절한 / encodeURI최소한 /encodeURIComponent() 모두다
+	-eval() ifFinite() isNaN

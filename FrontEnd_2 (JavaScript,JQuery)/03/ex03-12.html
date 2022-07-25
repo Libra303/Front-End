@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		//0부터 10까지 짝수합
+		//반복문
+		var output = 0;
+		for( var i = 2; i <= 10; i++){
+			//조건문
+			if( i % 2 == 1){
+				//홀수가 되면 현재 반복을 중지하고 다음반복수행
+				continue;
+			}
+			output += i;
+		}
+		
+		//출력
+		alert(output);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
